@@ -475,29 +475,26 @@ h3 {
 .subscript-field {
   display: inline-block;
   width: 264px;
-  height: 38px;
-  padding: 8px 8px 8px 55px;
-  background-color: var(--dark-text);
+  height: 40px;
+  padding: 8px 16px;
+  background-color: transparent;
   color: #ffffff;
   border: 1px solid #ffffff;
-  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
-.text-in-field {
-  position: absolute;
-  left: 16px;
-  top: 48px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
+.subscript-field::placeholder {
   color: #ffffff;
 }
 
 .subscript-form {
   display: flex;
   align-items: center;
+  gap: 24px;
 }
 
 .subscript-btn {
