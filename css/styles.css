@@ -457,6 +457,68 @@ h3 {
   background-color: #31d0aa;
 }
 
+.subscription-wraper {
+  margin-left: 80px;
+  position: relative;
+}
+
+.subscript-title {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.subscript-field {
+  display: inline-block;
+  width: 264px;
+  height: 38px;
+  padding: 8px 8px 8px 55px;
+  background-color: var(--dark-text);
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.text-in-field {
+  position: absolute;
+  left: 16px;
+  top: 48px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.subscript-technolog-wraper {
+  display: flex;
+  align-items: center;
+}
+
+.subscript-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 40px;
+  padding: 8px 24px;
+  margin-left: 24px;
+  background: var(--iris);
+  border-radius: 4px;
+}
+
+.subscript-btn-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
 /* Page PORTFOLIO */
 .section-portfolio {
   padding-top: 96px;
@@ -645,4 +707,147 @@ h3 {
 
 .modal-close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*------------- form------- */
+.contact-form {
+  padding: 72px 24px 24px 24px;
+}
+
+.forma-main-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: block;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  color: var(--dark-text);
+}
+
+.contact-form-field-wrapper {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form-title {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: var(--passiv-icon);
+}
+
+.contact-form-input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.contact-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding-left: 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-input:focus {
+  outline: none;
+  border-color: var(--iris);
+}
+
+.contact-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  display: block;
+  fill: var(--dark-text);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-input:focus + .contact-form-icon {
+  fill: var(--iris);
+}
+
+.contact-form-comment {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  transition: border-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-comment:focus {
+  outline: none;
+  border-color: var(--iris);
+}
+
+.contact-form-comment-wrapper {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.contact-form-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--passiv-icon);
+  margin-bottom: 24px;
+}
+
+.contact-form-checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.contact-form-psevdo-checkbox {
+  /* padding: 3px; */
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.contact-form-checkmark-icon {
+  opacity: 0;
+}
+
+.contact-form-checkbox:checked + .contact-form-psevdo-checkbox > .contact-form-checkmark-icon {
+  opacity: 1;
+}
+
+.contact-form-submit {
+  display: flex;
+  flex-direction: row;
+  padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
+  background: var(--iris);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.submit-btn-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.04em;
 }
